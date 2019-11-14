@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a09de3"
+    tools:context=".NoticiasActivity" >
+
+    <Button
+        android:id="@+id/btnCS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Counter Strike" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="114dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/crosshair" />
+
+    <Button
+        android:id="@+id/btnLOL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="League of Legends" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="99dp"
+        android:layout_height="103dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/moba" />
+
+    <Button
+        android:id="@+id/btnFort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fortnite"
+        />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/escolher" />
+
+</LinearLayout>

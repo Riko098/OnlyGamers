@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "657952121493",
+    "firebase_url": "https://onlygamers-7a8a5.firebaseio.com",
+    "project_id": "onlygamers-7a8a5",
+    "storage_bucket": "onlygamers-7a8a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657952121493:android:13e3245b491967d74fb19c",
+        "android_client_info": {
+          "package_name": "com.onlygamers.onlygamers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657952121493-lplmtd2a53o2nt8s126tp6ngu05t15lc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onlygamers.onlygamers",
+            "certificate_hash": "701ba7089c2efdbc6729ae4d268a0480002ae714"
+          }
+        },
+        {
+          "client_id": "657952121493-mlae3cs9db2ncvoe768cq60mquq3nuns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA37xSX5RJ14nPehcSOKSNRmpzMdW5mT6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657952121493-mlae3cs9db2ncvoe768cq60mquq3nuns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
