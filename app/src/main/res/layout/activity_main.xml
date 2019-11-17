@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#a09de3"
+    android:background="#00BCD4"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="#CB3B98E7"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
@@ -37,7 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="digite seu e-mail"
+        android:fontFamily="@font/allerta"
+        android:hint="digite o email ou preencha para se cadastrar"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -45,6 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:fontFamily="@font/allerta"
         android:hint="digite sua senha:"
         android:inputType="textPassword" />
 
@@ -52,13 +54,25 @@
         android:id="@+id/btnConfirmar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:fontFamily="@font/allerta"
         android:text="Entrar (Se já possui cadastro)" />
 
     <Button
         android:id="@+id/btnCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:fontFamily="@font/allerta"
         android:text="Cadastre-se" />
+
+    <Button
+        android:id="@+id/btnEsqueceuSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:fontFamily="@font/allerta"
+        android:text="Esqueceu sua senha?" />
 
 
 </LinearLayout>

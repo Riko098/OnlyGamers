@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     EditText password;
     Button btnConfirmar;
     Button btnCadastro;
+    Button btnEsqueceuSenha;
 
 
     FirebaseAuth firebaseAuth;
@@ -40,11 +41,13 @@ public class MainActivity extends AppCompatActivity {
         password=findViewById(R.id.etPassword);
         btnConfirmar=findViewById(R.id.btnConfirmar);
         btnCadastro=findViewById(R.id.btnCadastro);
+        btnEsqueceuSenha=findViewById(R.id.btnEsqueceuSenha);
 
 
         toolbar.setTitle(R.string.app_name);
         firebaseAuth = firebaseAuth.getInstance();
 
+       ///////////////////////////-CONFIGURANDO A AÇÃO DE CLIQUE NO BOTÃO (ENTRAR)-/////////////////////////////
         btnConfirmar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                                  startActivity(new Intent(MainActivity.this, NoticiasActivity.class));
 
                              }else{
-                                 Toast.makeText(MainActivity.this, "Verifique seu e-mail cadastrado",Toast.LENGTH_LONG).show();
+                                 Toast.makeText(MainActivity.this, "Verifique seu e-mail cadastrado para ativação da conta",Toast.LENGTH_LONG).show();
                              }
 
                          }else{
@@ -69,13 +72,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //-CONFIGURANDO A AÇÃO DE CLIQUE NO BOTÃO (CADASTRA-SE)
+        //Ele tbm ira enviar para o email uma verificação  para o usuario  ter acesso ao login
 
 
+        btnCadastro.setOnClickListener(new View.OnClickListener() {
 
-
-
-
-                        btnCadastro.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
                                 firebaseAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -85,9 +87,11 @@ public class MainActivity extends AppCompatActivity {
                                             firebaseAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task) {
+
                                                     if (task.isSuccessful()){
                                                         Toast.makeText(MainActivity.this, "Cadastro realizado com sucesso, Verifique seu e-mail cadastrado",
                                                                 Toast.LENGTH_LONG).show();
+
 
                                                     }else {
                                                         Toast.makeText(MainActivity.this, task.getException().getMessage(),
@@ -99,12 +103,22 @@ public class MainActivity extends AppCompatActivity {
                                             });
 
                                         }else {
+
                                             Toast.makeText(MainActivity.this, "Erro no registro! Tente novamente",
                                                     Toast.LENGTH_LONG).show();
 
                                         }
                                     }
                                 });
+                            }
+                        });
+        //-CONFIGURANDO A AÇÃO DE CLIQUE NO BOTÃO (ESQUECEU SUA SENHA) ESSA AÇÃO IRA LEVAR PARA A ACTIVTY DE ESQUECEU SUA SENHA
+
+        btnEsqueceuSenha.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent objetoIntent = new Intent(MainActivity.this, EsqueceuSenhaActivity.class);
+                                startActivity(objetoIntent);
                             }
                         });
 

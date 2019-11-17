@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00BCD4"
     android:orientation="vertical"
-    android:background="#a09de3"
-    tools:context=".NoticiasActivity" >
+    tools:context=".NoticiasActivity">
 
     <Button
         android:id="@+id/btnCS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Counter Strike" />
+        android:background="#03A9F4"
+        android:fontFamily="@font/allerta"
+        android:text="CSGO" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -25,6 +27,8 @@
         android:id="@+id/btnLOL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:fontFamily="@font/allerta"
         android:text="League of Legends" />
 
     <ImageView
@@ -38,8 +42,9 @@
         android:id="@+id/btnFort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fortnite"
-        />
+        android:background="#03A9F4"
+        android:fontFamily="@font/allerta"
+        android:text="Free Fire" />
 
     <ImageView
         android:id="@+id/imageView7"
