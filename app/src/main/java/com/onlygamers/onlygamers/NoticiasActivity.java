@@ -35,11 +35,11 @@ public class NoticiasActivity extends AppCompatActivity {
                 startActivity(objeto2Intent);
             }
         });
-        btnFort=findViewById(R.id.btnFort);
+        btnFort=findViewById(R.id.btnFreeFire);
         btnFort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent objeto3Intent = new Intent(NoticiasActivity.this, FORTActivity.class);
+                Intent objeto3Intent = new Intent(NoticiasActivity.this, FreeFireActivity.class);
                 startActivity(objeto3Intent);
 
             }

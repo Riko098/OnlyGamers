@@ -39,7 +39,7 @@
         app:srcCompat="@drawable/moba" />
 
     <Button
-        android:id="@+id/btnFort"
+        android:id="@+id/btnFreeFire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#03A9F4"
@@ -47,10 +47,9 @@
         android:text="Free Fire" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="95dp"
-        android:layout_height="92dp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/escolher" />
+        android:id="@+id/imageView4"
+        android:layout_width="422dp"
+        android:layout_height="101dp"
+        app:srcCompat="@drawable/Frefifas" />
 
 </LinearLayout>

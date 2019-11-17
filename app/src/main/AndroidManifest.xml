@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".EsqueceuSenhaActivity"></activity>
-        <activity android:name=".FORTActivity" />
+        <activity android:name=".FreeFireActivity" />
         <activity android:name=".LOLActivity" />
         <activity android:name=".CSActivity" />
         <activity android:name=".NoticiasActivity" />
