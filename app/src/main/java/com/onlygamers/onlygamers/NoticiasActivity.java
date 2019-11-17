@@ -10,7 +10,7 @@ import android.widget.Button;
 public class NoticiasActivity extends AppCompatActivity {
     Button btnCS;
     Button btnLOL;
-    Button btnFort;
+    Button btnFreeFire;
 
 
     @Override
@@ -35,8 +35,8 @@ public class NoticiasActivity extends AppCompatActivity {
                 startActivity(objeto2Intent);
             }
         });
-        btnFort=findViewById(R.id.btnFreeFire);
-        btnFort.setOnClickListener(new View.OnClickListener() {
+        btnFreeFire=findViewById(R.id.btnFreeFire);
+        btnFreeFire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent objeto3Intent = new Intent(NoticiasActivity.this, FreeFireActivity.class);

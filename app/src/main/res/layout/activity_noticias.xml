@@ -47,9 +47,10 @@
         android:text="Free Fire" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="422dp"
-        android:layout_height="101dp"
-        app:srcCompat="@drawable/Frefifas" />
+        android:id="@+id/imageView5"
+        android:layout_width="433dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/freefire" />
 
 </LinearLayout>
