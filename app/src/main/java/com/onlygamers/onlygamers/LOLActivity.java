@@ -16,7 +16,7 @@ public class LOLActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lol);
         webLOL=(WebView) findViewById(R.id.webLOL);
-
+        //PEGANDO URL DO PORTAL DE NOTICIAS DE LEAGUE OF LEGEDNS
         webLOL.setWebViewClient(new WebViewClient());
         webLOL.loadUrl("https://vs.com.br");
 
