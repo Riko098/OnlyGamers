@@ -18,8 +18,8 @@ public class CSActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cs);
-
         webCS=(WebView) findViewById(R.id.webCS);
+
         webCS.setWebViewClient(new WebViewClient());
         webCS.loadUrl("https://www.hltv.org");
 

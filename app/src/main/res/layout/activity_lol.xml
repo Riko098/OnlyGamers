@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context=".LOLActivity" />
+    tools:context=".LOLActivity" >
+
+    <WebView
+        android:id="@+id/webLOL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
