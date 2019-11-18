@@ -8,4 +8,8 @@
     tools:context=".CSActivity">
 
 
+    <WebView
+        android:id="@+id/webCS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

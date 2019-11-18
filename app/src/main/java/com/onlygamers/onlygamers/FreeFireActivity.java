@@ -19,7 +19,7 @@ public class FreeFireActivity extends AppCompatActivity {
         webFree=(WebView) findViewById(R.id.webFree);
 
 
-
+        //SETANDO A WEBVIEW PARA ACESSAR PORTAL DE FREE FIRE
         WebSettings webSettings = webFree.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webFree.loadUrl("https://freefirenews.com");
