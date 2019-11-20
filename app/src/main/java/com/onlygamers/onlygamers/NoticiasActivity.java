@@ -22,6 +22,7 @@ public class NoticiasActivity extends AppCompatActivity {
         btnCS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+              ///AÇÃO DE CLIQUE PARA IR PARA AS NOTICIAS RELACIONADAS A COUNTER STRIKE - GLOBAL OFFENSIVE
                 Intent objeto1Intent = new Intent(NoticiasActivity.this, CSActivity.class);
                 startActivity(objeto1Intent);
             }
@@ -31,6 +32,7 @@ public class NoticiasActivity extends AppCompatActivity {
         btnLOL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ///AÇÃO DE CLIQUE PARA IR PARA AS NOTICIAS RELACIONADAS A LEAGUE OF LEGENDS
                 Intent objeto2Intent = new Intent(NoticiasActivity.this, LOLActivity.class);
                 startActivity(objeto2Intent);
             }
@@ -39,6 +41,7 @@ public class NoticiasActivity extends AppCompatActivity {
         btnFreeFire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ///AÇÃO DE CLIQUE PARA IR PARA AS NOTICIAS RELACIONADAS A FREE FIRE
                 Intent objeto3Intent = new Intent(NoticiasActivity.this, FreeFireActivity.class);
                 startActivity(objeto3Intent);
 

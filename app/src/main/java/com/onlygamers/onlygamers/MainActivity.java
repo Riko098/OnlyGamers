@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         //-CONFIGURANDO A AÇÃO DE CLIQUE NO BOTÃO (CADASTRA-SE)
         //Ele tbm ira enviar para o email uma verificação  para o usuario  ter acesso ao login
 
+        // TASK = Um método comum que retorna a Taské FirebaseAuth.signInAnonymously(). Ele retorna a, o Task<AuthResult>que significa que a tarefa retornará
+        // um AuthResultobjeto quando for bem-sucedido:
+
 
         btnCadastro.setOnClickListener(new View.OnClickListener() {
 

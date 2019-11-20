@@ -23,6 +23,9 @@ public class CSActivity extends AppCompatActivity {
         webCS.setWebViewClient(new WebViewClient());
         webCS.loadUrl("https://www.teamplay.com.br/jogo/counter-strike-global-offensive");
 
+        //Gerencia o estado das configurações para um WebView.-
+        // Quando um WebView é criado, ele obtém um conjunto de configurações padrão. Essas configurações padrão -
+        // serão retornadas de qualquer chamada getter.
         WebSettings webSettings = webCS.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
@@ -30,6 +33,8 @@ public class CSActivity extends AppCompatActivity {
     }
 
     @Override
+    //SOBRESCREVENDO O METODO COM O  OnbackPressed
+    //SERVE PARA QUANDO CLICAR NO BOTÃO VOLTAR ELE RETORNA PARA O APP
     public void onBackPressed() {
         if (webCS.canGoBack()){
             webCS.goBack();

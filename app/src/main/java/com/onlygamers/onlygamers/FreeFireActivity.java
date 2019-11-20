@@ -19,7 +19,9 @@ public class FreeFireActivity extends AppCompatActivity {
         webFree=(WebView) findViewById(R.id.webFree);
 
 
-        //PEGANDO URL DO PORTAL DE NOTICIAS DE FREE FIRE
+        //Gerencia o estado das configurações para um WebView.-
+        // Quando um WebView é criado, ele obtém um conjunto de configurações padrão. Essas configurações padrão -
+        // serão retornadas de qualquer chamada getter.
 
         WebSettings webSettings = webFree.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -29,6 +31,8 @@ public class FreeFireActivity extends AppCompatActivity {
     }
 
     @Override
+    //SOBRESCREVENDO O METODO COM O  OnbackPressed
+    //SERVE PARA QUANDO CLICAR NO BOTÃO VOLTAR ELE RETORNA PARA O APP
     public void onBackPressed() {
         if (webFree.canGoBack()){
             webFree.goBack();
