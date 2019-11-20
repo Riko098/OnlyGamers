@@ -17,8 +17,9 @@ public class LOLActivity extends AppCompatActivity {
         setContentView(R.layout.activity_lol);
         webLOL=(WebView) findViewById(R.id.webLOL);
         //PEGANDO URL DO PORTAL DE NOTICIAS DE LEAGUE OF LEGEDNS
+        //WebView permitem exibir o conteúdo da Web como parte do layout da atividade
         webLOL.setWebViewClient(new WebViewClient());
-        webLOL.loadUrl("https://vs.com.br");
+        webLOL.loadUrl("http://mycnb.uol.com.br");
 
         //Gerencia o estado das configurações para um WebView.-
         // Quando um WebView é criado, ele obtém um conjunto de configurações padrão. Essas configurações padrão -

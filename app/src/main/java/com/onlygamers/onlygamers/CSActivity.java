@@ -20,6 +20,8 @@ public class CSActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cs);
         webCS=(WebView) findViewById(R.id.webCS);
         //PEGANDO URL DO PORTAL DE NOTICIAS DE CSGO
+        //WebView permitem exibir o conteúdo da Web como parte do layout da atividade
+
         webCS.setWebViewClient(new WebViewClient());
         webCS.loadUrl("https://www.teamplay.com.br/jogo/counter-strike-global-offensive");
 

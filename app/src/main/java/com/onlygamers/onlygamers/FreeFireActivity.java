@@ -25,6 +25,8 @@ public class FreeFireActivity extends AppCompatActivity {
 
         WebSettings webSettings = webFree.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        //WebView permitem exibir o conteúdo da Web como parte do layout da atividade
+
         webFree.loadUrl("https://freefirenews.com");
 
 
