@@ -23,7 +23,7 @@ public class LOLActivity extends AppCompatActivity {
 
         //Gerencia o estado das configurações para um WebView.-
         // Quando um WebView é criado, ele obtém um conjunto de configurações padrão. Essas configurações padrão -
-        // serão retornadas de qualquer chamada getter.
+        // serão retornadas de qualquer chamada.
         WebSettings webSettings = webLOL.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
