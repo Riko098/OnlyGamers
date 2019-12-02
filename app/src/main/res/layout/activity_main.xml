@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
+    android:background="#272E2E"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,9 +12,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#CB3B98E7"
+        android:background="#CB505458"
         android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:subtitleTextColor="#00E0D9D9">
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -39,7 +40,9 @@
         android:ems="10"
         android:fontFamily="@font/allerta"
         android:hint="digite o email ou preencha para se cadastrar"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColor="#EBDDDD"
+        android:textColorHint="#F1E9E9" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -48,31 +51,36 @@
         android:ems="10"
         android:fontFamily="@font/allerta"
         android:hint="digite sua senha:"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <Button
         android:id="@+id/btnConfirmar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#03A9F4"
+        android:background="#272E2E"
         android:fontFamily="@font/allerta"
-        android:text="Entrar (Se já possui cadastro)" />
+        android:text="Entrar (Se já possui cadastro)"
+        android:textColor="#EBDDDD" />
 
     <Button
         android:id="@+id/btnCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#03A9F4"
+        android:background="#272E2E"
         android:fontFamily="@font/allerta"
-        android:text="Cadastre-se" />
+        android:text="Cadastre-se"
+        android:textColor="#EBDDDD" />
 
     <Button
         android:id="@+id/btnEsqueceuSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#03A9F4"
+        android:background="#272E2E"
         android:fontFamily="@font/allerta"
-        android:text="Esqueceu sua senha?" />
+        android:text="Esqueceu sua senha?"
+        android:textColor="#EBDDDD" />
 
 
 </LinearLayout>
