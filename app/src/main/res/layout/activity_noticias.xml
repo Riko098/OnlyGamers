@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
+    android:background="#272E2E"
     android:orientation="vertical"
     tools:context=".NoticiasActivity">
 
@@ -12,9 +12,10 @@
         android:id="@+id/btnCS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#03A9F4"
+        android:background="#272E2E"
         android:fontFamily="@font/allerta"
-        android:text="CSGO" />
+        android:text="CSGO"
+        android:textColor="#F7F7F7" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -27,9 +28,10 @@
         android:id="@+id/btnLOL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#03A9F4"
+        android:background="#272E2E"
         android:fontFamily="@font/allerta"
-        android:text="League of Legends" />
+        android:text="League of Legends"
+        android:textColor="#FFFFFF" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -42,9 +44,10 @@
         android:id="@+id/btnFreeFire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#03A9F4"
+        android:background="#272E2E"
         android:fontFamily="@font/allerta"
-        android:text="Free Fire" />
+        android:text="Free Fire"
+        android:textColor="#FFFFFF" />
 
     <ImageView
         android:id="@+id/imageView5"
